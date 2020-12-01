@@ -9,6 +9,8 @@
         android:roundIcon="@mipmap/ic_my_fishy_pal_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyFishyPal">
+        <activity android:name=".AAHH"></activity>
+        <activity android:name=".trialActivity" />
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
