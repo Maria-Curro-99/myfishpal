@@ -52,7 +52,7 @@ class SecondFragment : Fragment() {
             findNavController().navigate(R.id.action_SecondFragment_to_FirstFragment)
         }
     }
-
+    //aahhh
     private fun savetofire() {
         val ref = FirebaseDatabase.getInstance().getReference("aquariums")
         val prodid = ref.push().key
