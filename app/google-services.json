@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "578972285606",
+    "firebase_url": "https://my-fish-pal.firebaseio.com",
+    "project_id": "my-fish-pal",
+    "storage_bucket": "my-fish-pal.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:578972285606:android:3e491100df87b4009d1267",
+        "android_client_info": {
+          "package_name": "com.example.myfishypal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "578972285606-tj223eu32ukbm6mul32mkn310qov1ena.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_DG6iTd5M-BgiJblzyrnc9GDPGSic6sU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "578972285606-tj223eu32ukbm6mul32mkn310qov1ena.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
