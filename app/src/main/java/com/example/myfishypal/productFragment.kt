@@ -37,7 +37,7 @@ class ThirdFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_third, container, false)
+        return inflater.inflate(R.layout.fragment_add_product, container, false)
     }
     lateinit var product_name: EditText
     lateinit var product_cost: EditText
@@ -51,12 +51,12 @@ class ThirdFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         //getting user input
 
-        product_name = view.findViewById<EditText>(R.id.input_product_name)
-        product_cost = view.findViewById<EditText>(R.id.input_product_cost)
-        product_expiary = view.findViewById<EditText>(R.id.input_product_expirery_date)
-        product_purchased = view.findViewById<EditText>(R.id.input_product_location)
-        product_amount = view.findViewById<EditText>(R.id.input_product_amount)
-        submit = view.findViewById<Button>(R.id.submit_product)
+        product_name = view.findViewById<EditText>(R.id.input_fish_name)
+        product_cost = view.findViewById<EditText>(R.id.input_fish_cost)
+        product_expiary = view.findViewById<EditText>(R.id.input_purchase_date)
+        product_purchased = view.findViewById<EditText>(R.id.input_fish_location)
+        product_amount = view.findViewById<EditText>(R.id.input_fish_amount)
+        submit = view.findViewById<Button>(R.id.submit_fish)
 
 
 
@@ -69,7 +69,7 @@ class ThirdFragment : Fragment() {
     private fun savetofire() {
         val ref = FirebaseDatabase.getInstance().getReference("products")
         val prodid = ref.push().key
-        val productvar = aquarium(prodid.toString(),  product_name.text.toString(), product_cost.text.toString(),product_expiary.text.toString(),product_purchased.text.toString(), product_amount.text.toString())
+        val productvar = products(prodid.toString(),  product_name.text.toString(), product_cost.text.toString(),product_expiary.text.toString(),product_purchased.text.toString(), product_amount.text.toString())
         ref.child(prodid.toString()).setValue(productvar).addOnCompleteListener {
             Toast.makeText(context, "Product was added successfully", Toast.LENGTH_LONG).show()
         }

@@ -9,46 +9,51 @@
         android:id="@+id/FirstFragment"
         android:name="com.example.myfishypal.FirstFragment"
         android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_first">
+        tools:layout="@layout/fragment_home">
 
         <action
-            android:id="@+id/action_FirstFragment_to_SecondFragment"
-            app:destination="@id/SecondFragment" />
-        <action
-            android:id="@+id/action_FirstFragment_to_thirdFragment"
-            app:destination="@id/thirdFragment" />
-        <action
-            android:id="@+id/action_FirstFragment_to_mainActivity"
-            app:destination="@id/mainActivity" />
+            android:id="@+id/action_FirstFragment_to_addFragment"
+            app:destination="@id/addFragment" />
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
-        android:name="com.example.myfishypal.SecondFragment"
+        android:name="com.example.myfishypal.tankFragment"
         android:label="@string/second_fragment_label"
-        tools:layout="@layout/fragment_second">
+        tools:layout="@layout/fragment_add_tank">
 
         <action
             android:id="@+id/action_SecondFragment_to_FirstFragment"
             app:destination="@id/FirstFragment" />
-        <action
-            android:id="@+id/action_SecondFragment_to_mainActivity"
-            app:destination="@id/mainActivity" />
     </fragment>
     <fragment
         android:id="@+id/thirdFragment"
         android:name="com.example.myfishypal.ThirdFragment"
         android:label="fragment_third"
-        tools:layout="@layout/fragment_third" >
+        tools:layout="@layout/fragment_add_product" >
         <action
             android:id="@+id/action_thirdFragment_to_FirstFragment"
             app:destination="@id/FirstFragment" />
-        <action
-            android:id="@+id/action_thirdFragment_to_mainActivity"
-            app:destination="@id/mainActivity" />
     </fragment>
-    <activity
-        android:id="@+id/mainActivity"
-        android:name="com.example.myfishypal.MainActivity"
-        android:label="activity_main"
-        tools:layout="@layout/activity_main" />
+    <fragment
+        android:id="@+id/fourthFragment"
+        android:name="com.example.myfishypal.FourthFragment"
+        android:label="FourthFragment" >
+        <action
+            android:id="@+id/action_fourthFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addFragment"
+        android:name="com.example.myfishypal.AddFragment"
+        android:label="AddFragment" >
+        <action
+            android:id="@+id/action_addFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+        <action
+            android:id="@+id/action_addFragment_to_thirdFragment"
+            app:destination="@id/thirdFragment" />
+        <action
+            android:id="@+id/action_addFragment_to_fourthFragment"
+            app:destination="@id/fourthFragment" />
+    </fragment>
 </navigation>
