@@ -6,13 +6,14 @@ import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.TextView
 
-class viewaquariumadapter (val mCtr : Context, val layoutResId: Int, val aquariumlist: List<aquarium>):ArrayAdapter<aquarium>(mCtr,layoutResId,aquariumlist){
+class viewfishadapter (val mCtr : Context, val layoutResId: Int, val fishlist: List<fish>):ArrayAdapter<fish>(mCtr,layoutResId,fishlist){
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
         val layoutInflator: LayoutInflater = LayoutInflater.from(mCtr);
         val view: View = layoutInflator.inflate(layoutResId, null);
         val textViewName = view.findViewById<TextView>(R.id.productnamelist);
-        val aquarium = aquariumlist[position]
-        textViewName.text = aquarium.tankname + "," + aquarium.tanksize+","+aquarium.tanklights+","+aquarium.tankfilter+","+aquarium.tanksubstrate;
+        val fish = fishlist[position]
+        textViewName.text = fish.fishname + "," + fish.fishcost+","+fish.purchasedate+","+fish.location+","+fish.amount;
         return view;
     }
+
 }
