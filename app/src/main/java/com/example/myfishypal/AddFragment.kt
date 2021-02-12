@@ -24,15 +24,15 @@ class AddFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        view.findViewById<Button>(R.id.add_aquarium).setOnClickListener {
+        view.findViewById<Button>(R.id.view_aquarium).setOnClickListener {
             findNavController().navigate(R.id.action_addFragment_to_SecondFragment)
         }
 
-        view.findViewById<Button>(R.id.add_product).setOnClickListener {
+        view.findViewById<Button>(R.id.view_product).setOnClickListener {
             findNavController().navigate(R.id.action_addFragment_to_thirdFragment)
         }
 
-        view.findViewById<Button>(R.id.add).setOnClickListener {
+        view.findViewById<Button>(R.id.add_item).setOnClickListener {
             findNavController().navigate(R.id.action_addFragment_to_fourthFragment)
         }
     }

@@ -10,7 +10,7 @@
         android:id="@+id/view_aquarium"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Add Aquarium"
+        android:text="View Aquarium"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.95"
@@ -22,19 +22,19 @@
         android:id="@+id/view_product"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Add Product"
+        android:text="View Product"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintHorizontal_bias="0.058"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.971" />
+        app:layout_constraintVertical_bias="0.969" />
 
     <Button
         android:id="@+id/add_item"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Add Fish"
+        android:text="View Fish"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.051"

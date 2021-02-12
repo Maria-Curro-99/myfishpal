@@ -8,7 +8,7 @@
     android:id="@+id/frameLayout">
 
     <Button
-        android:id="@+id/submit_fish"
+        android:id="@+id/submit_fish_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Submit"

@@ -6,30 +6,41 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.EditText
+import android.widget.Toast
 import androidx.navigation.fragment.findNavController
+import com.google.firebase.database.FirebaseDatabase
 
 /**
- * A simple [Fragment] subclass as the default destination in the navigation.
+ * A simple [Fragment] subclass as the second destination in the navigation.
  */
-class FirstFragment : Fragment() {
+class viewproductFragment : Fragment() {
 
     override fun onCreateView(
             inflater: LayoutInflater, container: ViewGroup?,
             savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false)
+        return inflater.inflate(R.layout.fragment_view_product, container, false)
     }
+
+
+    lateinit var submit: Button
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        //getting user input
 
-        view.findViewById<Button>(R.id.add_item).setOnClickListener {
-            findNavController().navigate(R.id.action_FirstFragment_to_addFragment)
-        }
+        submit = view.findViewById<Button>(R.id.submit_veiw_product)
 
-        view.findViewById<Button>(R.id.view_item).setOnClickListener {
-            findNavController().navigate(R.id.action_FirstFragment_to_viewFragment)
+
+
+        submit.setOnClickListener {
+
+
+            findNavController().navigate(R.id.action_viewproductFragment_to_FirstFragment)
         }
     }
+
+
 }

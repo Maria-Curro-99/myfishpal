@@ -5,7 +5,7 @@
     android:id="@+id/input_tak_size"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".tankFragment">
+    tools:context=".addtankFragment">
 
     <EditText
         android:id="@+id/input_tank_substrate"

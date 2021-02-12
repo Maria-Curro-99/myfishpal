@@ -14,10 +14,13 @@
         <action
             android:id="@+id/action_FirstFragment_to_addFragment"
             app:destination="@id/addFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_viewFragment"
+            app:destination="@id/viewFragment" />
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
-        android:name="com.example.myfishypal.tankFragment"
+        android:name="com.example.myfishypal.addtankFragment"
         android:label="@string/second_fragment_label"
         tools:layout="@layout/fragment_add_tank">
 
@@ -55,5 +58,43 @@
         <action
             android:id="@+id/action_addFragment_to_fourthFragment"
             app:destination="@id/fourthFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewFragment"
+        android:name="com.example.myfishypal.ViewFragment"
+        android:label="ViewFragment" >
+        <action
+            android:id="@+id/action_viewFragment_to_viewtankFragment"
+            app:destination="@id/viewtankFragment" />
+        <action
+            android:id="@+id/action_viewFragment_to_viewfishFragment"
+            app:destination="@id/viewfishFragment" />
+        <action
+            android:id="@+id/action_viewFragment_to_viewproductFragment"
+            app:destination="@id/viewproductFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewtankFragment"
+        android:name="com.example.myfishypal.viewtankFragment"
+        android:label="viewtankFragment" >
+        <action
+            android:id="@+id/action_viewtankFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewfishFragment"
+        android:name="com.example.myfishypal.viewfishFragment"
+        android:label="viewfishFragment" >
+        <action
+            android:id="@+id/action_viewfishFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewproductFragment"
+        android:name="com.example.myfishypal.viewproductFragment"
+        android:label="viewproductFragment" >
+        <action
+            android:id="@+id/action_viewproductFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
     </fragment>
 </navigation>

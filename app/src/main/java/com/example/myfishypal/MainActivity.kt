@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
         //noinspection SimplifiableIfStatement
 
         if (id == R.id.item2) {
-            val intent = Intent(this, tankFragment::class.java)
+            val intent = Intent(this, addtankFragment::class.java)
             this.startActivity(intent)
             return true
         }
